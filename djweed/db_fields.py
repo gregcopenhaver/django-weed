@@ -1,10 +1,11 @@
+import six
+
 from django.contrib.contenttypes.models import ContentType
 try:
     from django.core.urlresolvers import reverse
 except ImportError:  # Django 2.0
     from django.urls import reverse
 from django.db.models.fields.files import FieldFile, FileField
-from django.utils import six
 
 from .storage import WeedFSStorage
 
